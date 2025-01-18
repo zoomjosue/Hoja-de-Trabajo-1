@@ -1,4 +1,4 @@
 public class Licuadora {
-    private int Speed;
+    private int speed;
     private boolean content;
 }
