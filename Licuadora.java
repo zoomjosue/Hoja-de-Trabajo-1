@@ -1,3 +1,11 @@
+/**
+/ UNIVERSIDAD DEL VALLE DE GUATEMALA
+/ DEPARTAMENTO DE CIENCIA DE LA COMPUTACIÓN
+/ CC2008 
+/ AUTOR: Josué Antonio Isaac García Barrera - 24918, Jose Alberto Abril Suchite 24585, José Manuel Sanchez Hernandez - 24092
+/ FECHA: 28/01/2025   
+*/
+
 public class Licuadora {
     private int speed;
     private boolean content;
@@ -13,11 +21,7 @@ public class Licuadora {
     public void SpeedUp(){
         if(speed < 10){
             speed++;
-            System.out.println("Le has subido la velocidad");
         } 
-        else{
-            System.out.println("La velocidad esta a nivel maximo");
-        }
     }
 
     /**
@@ -26,10 +30,16 @@ public class Licuadora {
     public void SpeedDown(){
         if(speed > 0){
             speed--;
-            System.out.println("Le has bajado velocidad");
-        }
-        else{
-            System.out.println("La velocidad esta en su minimo");
         }
     }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    
 }
