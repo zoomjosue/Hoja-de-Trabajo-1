@@ -29,21 +29,24 @@ public class Main {
                     licuadora.SpeedDown();
                     break;
                 
-
                 case "3":
-        
+                    licuadora.GetSpeed();
                     break;
 
                 case "4":
-
+                    licuadora.Fill();
                     break;
 
                 case "5":
-
+                    licuadora.Empty();
                     break;
 
                 case "6":
-
+                    if(licuadora.IsFull()){
+                        System.out.println("La licuadora está llena.");
+                    } else {
+                        System.out.println("La licuadora está vacía.");
+                    }
                     break;
 
                 case "7":
