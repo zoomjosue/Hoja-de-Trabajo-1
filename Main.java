@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
     
         Scanner scanner = new Scanner(System.in);
+        Licuadora licuadora = new Licuadora();
         String opcion = "";
         while (!opcion.equals("7")) {
 
@@ -21,11 +22,11 @@ public class Main {
 
             switch (opcion) {
                 case "1":
-
+                    licuadora.SpeedUp();
                     break;
 
                 case "2":
-
+                    licuadora.SpeedDown();
                     break;
                 
 
