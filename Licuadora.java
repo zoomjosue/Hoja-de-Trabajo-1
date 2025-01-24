@@ -15,6 +15,8 @@ public class Licuadora implements IBlender{
         this.content = false;
     }
 
+
+    @Override
     /**
      * Este método se encarga de subir la velocidad uno por uno hasta el nivel 10, solo si la licuadora no está vacía.
      */
@@ -27,6 +29,7 @@ public class Licuadora implements IBlender{
 
     }
 
+    @Override
     /**
      * Este método se encarga de bajar la velocidad uno por uno hasta el nivel 0, solo si la licuadora no está vacía.
      */
@@ -39,6 +42,7 @@ public class Licuadora implements IBlender{
 
     }
 
+    @Override
     /**
      * Este método se encarga de obtener la velocidad actual de la licuadora.
      * @return int - la velocidad actual de la licuadora.
@@ -55,6 +59,7 @@ public class Licuadora implements IBlender{
         this.speed = speed;
     }
 
+    @Override
     /**
      * Este método se encarga de llenar la licuadora.
      */
@@ -62,6 +67,7 @@ public class Licuadora implements IBlender{
         content = true;
     }
 
+    @Override
     /**
      * Este método se encarga de vaciar la licuadora.
      */
@@ -69,6 +75,7 @@ public class Licuadora implements IBlender{
         content = false;
     }
 
+    @Override
     /**
      * Este método se encarga de verificar si la licuadora esta llena.
      * @return boolean - true si esta llena, false si no.
